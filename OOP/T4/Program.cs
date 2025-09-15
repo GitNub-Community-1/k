@@ -1,0 +1,15 @@
+﻿Hotel hotel = new Hotel();
+hotel.AddRoom(new Room(101, "Стандарт", 250));
+hotel.AddRoom(new Room(102, "Люкс", 500));
+hotel.AddRoom(new Room(103, "Эконом", 180));
+hotel.AddRoom(new Room(104, "Семейная", 350));
+hotel.AddRoom(new Room(105, "Бизнес", 400));
+hotel.AddRoom(new Room(106, "Премиум", 600));
+hotel.BookRoom(101);
+hotel.BookRoom(104);
+hotel.BookRoom(106);
+hotel.ShowBookedRooms();
+hotel.CancelBooking(104);
+hotel.ShowAvailableRooms();
+double income = hotel.TotalBookedIncome();
+Console.WriteLine("Общий доход: " + income + " сом");

@@ -1,0 +1,14 @@
+﻿Post post = new Post();
+System.Console.Write("Введите текст чтоб опубликовать: ");
+string a = Console.ReadLine();
+post.SetPost(a);
+post.AddLike();
+post.AddLike();
+post.AddLike();
+post.AddComments("Очень трогательный текст");
+post.AddComments("Вы потрясяюший человек");
+post.AddComments("А откуда такая мудрость?");
+System.Console.WriteLine();
+System.Console.WriteLine();
+System.Console.WriteLine();
+post.GetInfo();
